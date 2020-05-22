@@ -3,6 +3,7 @@ module.exports = {
     base: '/blog/',
     title: 'hh`s blog',
     description: 'hh',
+    // head: ['link', {rel: 'icon', href: './public/fav.ico'}],
     markdown: {
         lineNumbers: true
     },
@@ -11,11 +12,8 @@ module.exports = {
             text: 'Blog',
             link: '/article/JavaScript/QA-daily'
         }, {
-            text: 'Project',
-            link: '/project/flex/flex'
-        }, {
             text: 'Resume',
-            link: '/aboutMe'
+            link: '/resume'
         }],
         sidebarDepth: 3,
         sidebar: {
@@ -55,10 +53,6 @@ module.exports = {
                 'JavaScript/micro-fe',
                 'Other/vue-cli3-optimise',
                 'Typescript/first-explore'
-            ],
-            '/project/': [
-                'flex/flex',
-                'flappyBird/flappyBird'
             ]
         }
     },
