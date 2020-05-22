@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>项目重构优化了解一下 | hh`s blog</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    
+    <meta name="description" content="hh">
+    <link rel="preload" href="/blog/assets/css/0.styles.56a09861.css" as="style"><link rel="preload" href="/blog/assets/js/app.ab9ab2d1.js" as="script"><link rel="preload" href="/blog/assets/js/2.c44a99e1.js" as="script"><link rel="preload" href="/blog/assets/js/28.c6eb632f.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.62d66a1e.js"><link rel="prefetch" href="/blog/assets/js/11.e83c94df.js"><link rel="prefetch" href="/blog/assets/js/12.f1609b29.js"><link rel="prefetch" href="/blog/assets/js/13.83507e43.js"><link rel="prefetch" href="/blog/assets/js/14.9a91de92.js"><link rel="prefetch" href="/blog/assets/js/15.273868e1.js"><link rel="prefetch" href="/blog/assets/js/16.6040e03b.js"><link rel="prefetch" href="/blog/assets/js/17.8551a322.js"><link rel="prefetch" href="/blog/assets/js/18.1608b574.js"><link rel="prefetch" href="/blog/assets/js/19.b68e5481.js"><link rel="prefetch" href="/blog/assets/js/20.655cd788.js"><link rel="prefetch" href="/blog/assets/js/21.7b4d9b32.js"><link rel="prefetch" href="/blog/assets/js/22.1f3fe83b.js"><link rel="prefetch" href="/blog/assets/js/23.97fa6453.js"><link rel="prefetch" href="/blog/assets/js/24.0da9e040.js"><link rel="prefetch" href="/blog/assets/js/25.ed79b7b9.js"><link rel="prefetch" href="/blog/assets/js/26.f4322329.js"><link rel="prefetch" href="/blog/assets/js/27.d48b1db2.js"><link rel="prefetch" href="/blog/assets/js/29.0560e03f.js"><link rel="prefetch" href="/blog/assets/js/3.e0eda831.js"><link rel="prefetch" href="/blog/assets/js/30.d8cfb5da.js"><link rel="prefetch" href="/blog/assets/js/31.932f3120.js"><link rel="prefetch" href="/blog/assets/js/32.2597786b.js"><link rel="prefetch" href="/blog/assets/js/33.cd38c6ab.js"><link rel="prefetch" href="/blog/assets/js/34.c62c229a.js"><link rel="prefetch" href="/blog/assets/js/35.f3c411b4.js"><link rel="prefetch" href="/blog/assets/js/36.3c8c392c.js"><link rel="prefetch" href="/blog/assets/js/37.235a4f16.js"><link rel="prefetch" href="/blog/assets/js/38.00450170.js"><link rel="prefetch" href="/blog/assets/js/39.32e0bd57.js"><link rel="prefetch" href="/blog/assets/js/4.1ab1c1e7.js"><link rel="prefetch" href="/blog/assets/js/40.ffc0645b.js"><link rel="prefetch" href="/blog/assets/js/41.733bf30f.js"><link rel="prefetch" href="/blog/assets/js/42.103c36ea.js"><link rel="prefetch" href="/blog/assets/js/43.9364c772.js"><link rel="prefetch" href="/blog/assets/js/44.1b0629b5.js"><link rel="prefetch" href="/blog/assets/js/45.f780058e.js"><link rel="prefetch" href="/blog/assets/js/46.8c396f85.js"><link rel="prefetch" href="/blog/assets/js/47.e7a45b38.js"><link rel="prefetch" href="/blog/assets/js/48.31e590a1.js"><link rel="prefetch" href="/blog/assets/js/5.0e1505a6.js"><link rel="prefetch" href="/blog/assets/js/6.cf806575.js"><link rel="prefetch" href="/blog/assets/js/7.5a073561.js"><link rel="prefetch" href="/blog/assets/js/8.879072ed.js"><link rel="prefetch" href="/blog/assets/js/9.2b0134e1.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.56a09861.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">hh`s blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/article/JavaScript/QA-daily.html" class="nav-link">
+  Blog
+</a></div><div class="nav-item"><a href="/blog/project/flex/flex.html" class="nav-link">
+  Project
+</a></div><div class="nav-item"><a href="/blog/aboutMe.html" class="nav-link">
+  Resume
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/article/JavaScript/QA-daily.html" class="nav-link">
+  Blog
+</a></div><div class="nav-item"><a href="/blog/project/flex/flex.html" class="nav-link">
+  Project
+</a></div><div class="nav-item"><a href="/blog/aboutMe.html" class="nav-link">
+  Resume
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/article/JavaScript/QA-daily.html" class="sidebar-link">每日一题  💌</a></li><li><a href="/blog/article/JavaScript/QA-advanced.html" class="sidebar-link">前端进阶问题 💥</a></li><li><a href="/blog/article/Other/functional-programming.html" class="sidebar-link">函数式编程 💻</a></li><li><a href="/blog/article/Other/curring.html" class="sidebar-link">函数柯里化 🌝</a></li><li><a href="/blog/article/Other/unit-test.html" class="sidebar-link">Vue Test Utils测试初探 🏃</a></li><li><a href="/blog/article/CSS/grid/grid.html" class="sidebar-link">Grid了解一波👀</a></li><li><a href="/blog/article/JavaScript/Class.html" class="sidebar-link">Class 🌿</a></li><li><a href="/blog/article/JavaScript/weakMap.html" class="sidebar-link">WeakMap 👈</a></li><li><a href="/blog/article/CSS/mouse-follow-hover.html" class="sidebar-link">通过hover实现鼠标跟随动画😏</a></li><li><a href="/blog/article/JavaScript/clipboard.html" class="sidebar-link">原生JS实现粘贴到剪贴板</a></li><li><a href="/blog/article/JavaScript/screen/screen.html" class="sidebar-link">关于物理像素/逻辑像素那点事儿</a></li><li><a href="/blog/article/JavaScript/extension.html" class="sidebar-link">关于Chrome浏览器插件开发</a></li><li><a href="/blog/article/JavaScript/browser.html" class="sidebar-link">浏览器内核与JS引擎</a></li><li><a href="/blog/article/JavaScript/webpack/webpack-s1.html" class="sidebar-link">webpack配置工程师—基础</a></li><li><a href="/blog/article/JavaScript/webpack/webpack-s2.html" class="sidebar-link">webpack配置工程师—实践</a></li><li><a href="/blog/article/JavaScript/reconstruction/reconstruction.html" aria-current="page" class="active sidebar-link">项目重构优化了解一下</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/article/JavaScript/reconstruction/reconstruction.html#背景" class="sidebar-link">背景</a></li><li class="sidebar-sub-header"><a href="/blog/article/JavaScript/reconstruction/reconstruction.html#模块化" class="sidebar-link">模块化</a></li><li class="sidebar-sub-header"><a href="/blog/article/JavaScript/reconstruction/reconstruction.html#组件化" class="sidebar-link">组件化</a></li><li class="sidebar-sub-header"><a href="/blog/article/JavaScript/reconstruction/reconstruction.html#规范化" class="sidebar-link">规范化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/article/JavaScript/reconstruction/reconstruction.html#公用方法库的封装" class="sidebar-link">公用方法库的封装</a></li><li class="sidebar-sub-header"><a href="/blog/article/JavaScript/reconstruction/reconstruction.html#目录结构的制定" class="sidebar-link">目录结构的制定</a></li></ul></li></ul></li><li><a href="/blog/article/JavaScript/api-rules.html" class="sidebar-link">前后端接口规范</a></li><li><a href="/blog/article/JavaScript/token.html" class="sidebar-link">聊聊token那些事</a></li><li><a href="/blog/article/JavaScript/iview-render.html" class="sidebar-link">iview render的使用</a></li><li><a href="/blog/article/JavaScript/dev-build.html" class="sidebar-link">开发模式下动态传入API地址进行构建</a></li><li><a href="/blog/article/JavaScript/ssh-key.html" class="sidebar-link">一台设备配置多个ssh key</a></li><li><a href="/blog/article/JavaScript/ssh-login.html" class="sidebar-link">ssh简写免密登录服务器</a></li><li><a href="/blog/article/JavaScript/js-tricks.html" class="sidebar-link">JavaScript中常用的小技巧</a></li><li><a href="/blog/article/JavaScript/pdf-review/pdf.html" class="sidebar-link">实现PDF预览</a></li><li><a href="/blog/article/JavaScript/event-bus.html" class="sidebar-link">Vue event bus</a></li><li><a href="/blog/article/JavaScript/vue-cli3.html" class="sidebar-link">关于Vue CLI 3 不同环境下打包代码</a></li><li><a href="/blog/article/JavaScript/yarn-vs-npm.html" class="sidebar-link">yarn vs npm</a></li><li><a href="/blog/article/JavaScript/micro-fe.html" class="sidebar-link">微前端架构</a></li><li><a href="/blog/article/Other/vue-cli3-optimise.html" class="sidebar-link">optimise</a></li><li><a href="/blog/article/Typescript/first-explore.html" class="sidebar-link">TypeScript</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="项目重构优化了解一下"><a href="#项目重构优化了解一下" class="header-anchor">#</a> 项目重构优化了解一下</h1> <h2 id="背景"><a href="#背景" class="header-anchor">#</a> 背景</h2> <p>随着业务发展，公司现有的某个项目（代号F）越来越庞大复杂，原有项目架构在易维护性，易扩展性上体现得越来越吃力，一直在考虑重构。前段时间机缘巧合看到TalkingData团队发布了一个后台管理系统集成解决方案<a href="https://github.com/iview/iview-admin" target="_blank" rel="noopener noreferrer">iview-admin<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，clone下来后发现整个项目架构异常清奇，值得学习一波</p> <p>个人认为，可从组件化、模块化、规范化、自动化四个方面来思考如何实现一个好的项目架构，达到易维护、易扩展、模块和模块间的低耦合性，使用一些工具解决一些通用型问题等目的, 下面从以上几个方面来分析iview-admin的架构</p> <h2 id="模块化"><a href="#模块化" class="header-anchor">#</a> 模块化</h2> <p>简单来说，模块化就是将一个大文件拆分成相互依赖的小文件，再进行统一的拼装和加载，是在文件层面上对代码和资源进行拆分。</p> <p>项目F的每个路由页面是一个单独.vue文件，这些.vue文件中同时杂糅了html，js和scss，稍微大点的页面已经可怕到有上千行代码了：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>├─components
+│  ├─common
+│  ├─ 一个长达千行的xxx.vue
+│  ├─ 另一个长达千行的xxx.vue
+│  └─ ...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>而来看一下iview-admin的文件结构：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>├─views
+│  ├─common-components
+│  ├─error-pages
+│  │   ├─error-page.vue
+│  │   ├─error-page.less
+│  │   ├─404.vue
+│  │   ├─404.less
+│  │   ├─500.vue
+│  │   ├─500.less
+│  │   ├─403.vue
+│  │   └─403.less
+│  └─tables
+│      ├─components
+│      ├─data
+│      ├─xxx.vue
+│      └─xxx.less
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>首先明显可以看到一点，iview-admin将less文件单独拆分开来了，这样一来.vue文件明显可以小很多，由此得出模块拆分点：将html结构和css样式拆分，如果页面复杂，我们甚至可以将js文件也拆分开来。这样可以使得每一个文件职责单一，易于维护。</p> <h2 id="组件化"><a href="#组件化" class="header-anchor">#</a> 组件化</h2> <p>先说一下组件化，组件化是在设计层面上，对UI（用户界面）的拆分。从UI角度拆分下来的每个包含模板(HTML)+样式(CSS)+逻辑(JS)的功能完备的结构单元，称之为组件。</p> <p>接下来看一下error-pages文件夹下的error-page.vue文件：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token operator">...</span>
+
+<span class="token operator">&lt;</span>Row<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;error-page-show&quot;</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>error404<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>error404<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;error-page-cover&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>Row<span class="token operator">&gt;</span>
+
+<span class="token operator">...</span>
+
+<span class="token operator">&lt;</span>Row<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;error-page-show&quot;</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>error403<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>error403<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;error-page-cover&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>Row<span class="token operator">&gt;</span>
+
+<span class="token operator">...</span>
+
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+<span class="token keyword">import</span> Error404 <span class="token keyword">from</span> <span class="token string">'./404.vue'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Error403 <span class="token keyword">from</span> <span class="token string">'./403.vue'</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    components<span class="token operator">:</span> <span class="token punctuation">{</span>
+        Error404<span class="token punctuation">,</span>
+        Error403
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><p>可以发现，errorPage中的404，403等页面是被拆分成了单独的组件来处理不同error情况，这里更重要的是体现一种分治思想。封装组件本身，还要合理处理组件之间的关系，比如（逻辑）继承、（样式）扩展、（模板）嵌套和包含等。</p> <h2 id="规范化"><a href="#规范化" class="header-anchor">#</a> 规范化</h2> <h3 id="公用方法库的封装"><a href="#公用方法库的封装" class="header-anchor">#</a> 公用方法库的封装</h3> <p>可以将共用方法库统一放到一个叫做lib的文件夹下，这个libs文件夹下可以包括共用的方法库utils，封装的ajax请求等，而一些高频共用的方法比如权限判断等则可以将其封装到一个对象比如auth中，一般非常的高频的方法不会太多，为了避免反复引入带来的麻烦，可以将这个auth对象定义到vue根实例中方便调用。</p> <h3 id="目录结构的制定"><a href="#目录结构的制定" class="header-anchor">#</a> 目录结构的制定</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>├─src
+│  ├─App.vue
+│  ├─main.js
+│  ├─assets
+│  ├─common-components
+│  │         └─dialog
+│  │            ├─src
+│  │            │  └─main.vue
+│  │            └─index.js
+│  ├─global-mixins
+│  ├─router
+│  ├─libs
+│  ├─pages
+│  │   ├─page01
+│  │   │    ├─components
+│  │   │    │     ├─modal.vue
+│  │   │    │     └─modal.css
+│  │   │    ├─page01.vue
+│  │   │    └─page01.css
+│  │   ├─page02
+│  │   ├─page03
+│  │   ├─...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p>一般项目可以按以上方法进行构建
+如果是大型项目，整个项目中可以将其按大的功能模块进行初步划分。这些大的功能模块可以但是成为上述结构中的pages。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/article/JavaScript/webpack/webpack-s2.html" class="prev">
+        webpack配置工程师—实践
+      </a></span> <span class="next"><a href="/blog/article/JavaScript/api-rules.html">
+        前后端接口规范
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.ab9ab2d1.js" defer></script><script src="/blog/assets/js/2.c44a99e1.js" defer></script><script src="/blog/assets/js/28.c6eb632f.js" defer></script>
+  </body>
+</html>
