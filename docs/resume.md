@@ -17,18 +17,16 @@
         <span style="position: absolute; top: 50%; left: 2px; transform: translate(-50%, -50%); display: inline-block; width: 20px; height: 20px; border: 2px solid #2c3e50; border-radius: 50%;">
             <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 12px; height: 12px; border: 1px solid #2c3e50; border-radius: 50%;"></span>
         </span>
-    　熊猫优选
+    　园里园外微官网（微信公众号）
     </span>
 </h3>
 
-> 熊猫优选是一款网络购物产品，为用户提供大量天猫淘宝购物优惠券，享受省钱实惠的购物体验；
->
-> 我在该项目中负责部分小程序和h5的开发，以及运营后台的改造；在改造原有项目中收获最大的便是模块化和组件化的开发方式，能够极大提高了易读性和可维护性，这点在大型项目中显得尤为重要；除此之外，在其他同事的协助下推出了前端团队的一套编码规范
+> 微信公众号
 
 #### h5
 * 采用`vue` + `vue-router` + `vuex` + `axios`技术栈
-* 使用`webpack`自动化前端工作流，使用`mocha`进行自动化测试
-* 使用`eslint`规范并结合`Git hook`强制编码规范
+* 使用`webpack`自动化前端工作流
+* 使用`eslint`规范强制编码规范
 
 ## 专业技能
 
@@ -49,6 +47,8 @@
 `webpack`,　`gulp` 熟练使用webpack自动化前端工作流，了解gulp
 
 `Git`　熟练使用Git
+
+`npm`, `yarn` 熟练使用`npm`, `yarn`包管理工具
 
 ##### 联系方式
 ##### TEL: 15757176713
