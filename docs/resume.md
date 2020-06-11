@@ -6,7 +6,7 @@
 杭州杭为网络科技有限公司     前端工程师
 
 * 2017.10 — 2019.9
-杭州园钉科技有限公司     前端工程师
+杭州园钉科技有限公司     前端负责人
 
 * 2019.10 - 至今
 安道亿联（重庆）供应链管理科技有限公司
@@ -38,9 +38,9 @@
 
 `react` 熟练使用 `react-create-app` + `react hooks` + `react-router-dom` + `redux` + `typescript` + `css modules`
 
-`原生小程序`, `mpvue`, `uni-app` 熟练使用原生小程序和小程序开发框架进行小程序开发
-
 `jQuery` 熟练使用jQuery进行开发
+
+`原生小程序`, `mpvue`, `uni-app` 熟练使用原生小程序和小程序开发框架进行小程序开发
 
 `echarts` 熟练使用echarts数据可视化库，可以快速根据设计要求进行配置
 

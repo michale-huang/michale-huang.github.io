@@ -2,11 +2,13 @@ module.exports = {
     dest: 'blog',
     base: '/blog/',
     title: 'hh`s blog',
-    description: 'hh',
+    description: '一步一个脚印',
     // head: ['link', {rel: 'icon', href: './public/fav.ico'}],
     markdown: {
         lineNumbers: true
     },
+    port: 9999,
+    cache: false,
     themeConfig: {
         nav: [{
             text: 'Blog',

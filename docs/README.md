@@ -1,6 +1,6 @@
 ---
-home: true
-heroImage: /hh.gif
-actionText: 来打我呀
-actionLink: /resume
+home: true
+heroImage: /hh.gif
+actionText: Myself →
+actionLink: /resume
 ---
